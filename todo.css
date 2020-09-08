@@ -1,0 +1,211 @@
+
+body{
+    background-image: linear-gradient(to bottom right,#7fb3ff,#b995ff);
+    background-repeat: no-repeat;
+    height: 97.5vh;
+    font-family: cursive;
+}
+.to__do{
+    background: #ffff;
+    width: 30%;
+    height: 90vh;
+    position: relative;
+    left: 27em;
+    top: 1.5em;
+    box-shadow: 1px 17px 15px 7px #888888;
+}
+.todo__head{
+    background: linear-gradient(to bottom right,#0cb6ff,#8575f2);
+    position: absolute;
+    height: 30vh;
+    width: 100%;
+}
+#date{
+    color: #fff002;
+    font-size: 3.5em;
+    margin: 1em 0 0 0.5em;
+}
+#year{
+    margin: 0.3em 0 0 6em; 
+    color:#ffffff;
+}
+#month{
+    margin: -3em 0 0 4em; 
+    color:#ffffff;
+    font-size: 1.5em;
+}
+#day{
+    float: right;
+    color: white;
+    font-size: 1.2em;
+    margin: -0.1em 1em 0 0;
+}
+.todo__container{
+    width: 85%;
+    position: absolute;
+    background: #ffffff;
+    top: 10em;
+    left: 2em;
+    height: 55vh;
+    overflow-y: scroll;
+}
+.todo__list{
+    list-style-type: none;
+}
+.todo__li{
+    width: 90%;
+    height: 15vh;
+    overflow: hidden;
+    border-left: 10px solid #359be5;
+    box-shadow:  5px 10px 18px #888888;
+    margin-top: 1em;
+}
+.add__todo{
+    color:#4092c1;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-weight: 900;
+    border-radius: 50px;
+    font-size: 2em;
+    position: absolute;
+    top: 16em;
+    left: 6em;
+}
+.add__todo:hover{
+    cursor: pointer;
+}
+.modal__box{
+    display: none;
+    position: fixed;
+    background: rgb(0,0,0,0.8);
+    width: 105%;
+    height: 102vh;
+    z-index: 2;
+    margin: -1em 0 0 -1em;
+}
+.modal__form{
+    background:linear-gradient(to bottom right,#0cb6ff,#8575f2) ;
+    width: 30%;
+    height: 50vh;
+    margin: 5em 0 0 27em;
+  
+}
+#cancel{
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin: -1em -1em 0 0;
+}
+#cancel:hover{
+    cursor: pointer;
+}
+#todo__text{
+    margin: 5em 0 0 8em;
+    border: 2px solid #f29e18;
+    border-radius: 5px;
+    height: 5vh;
+    width: 50%;
+    outline: none;
+   font-family: cursive;
+   font-weight: 900;
+}
+#todo__time{
+    border:2px solid #930ce5;
+    border-radius: 5px;
+    display: block;
+    margin: 1em 0 0 8em;
+    height: 5vh;
+    width: 50%;
+    outline: none;
+    font-family: cursive;
+    font-weight: 900;
+}
+.label1{
+    display: block;
+   color: white;
+   text-align: center;
+   font-family: cursive;
+   margin-bottom:-3em;
+}
+.label2{
+    display: block;
+   color: white;
+   text-align: center;
+   font-family: cursive;
+   margin-top: 3em;
+}
+#button{
+    background: #29a133;
+    width: 30%;
+    height: 8vh;
+    outline: none;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    font-weight: 900;
+    font-family: cursive;
+    border-radius: 5px;
+    margin:2em 0 0 8em;
+}
+#button:hover{
+    cursor: pointer;
+}
+.float{
+    float: right;
+}
+.star{
+    display:inline;
+    font-size:1.4em;
+    position: relative;
+    top: 2.7em;
+}
+.star:hover{
+    cursor: pointer;
+}
+#checkbox{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: #25a4ff;
+    text-align: center;
+    color: #ffff;
+    position: relative;
+    top: -2.5em;
+    left: 1em;
+    font-size: 1.5em;
+}
+#checkbox:hover{
+    cursor: pointer;
+}
+#check{
+    position: absolute;
+    top: 0.9em;
+    right: 1.2em;
+}
+.time{
+    margin: -2em -1em 0 0;
+    float: right;
+    font-size: 1.2em;
+}
+#head{
+    margin: 1em;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px){
+    .to__do{
+        background: #ffff;
+        width: 80%;
+        height: 85vh;
+        position: relative;
+        left: 2em;
+        top: 1.5em;
+    }
+    .add__todo{
+        left: 4em;
+    }
+    .modal__form{
+        margin: 5em 0 0 3em;
+        width: 80%;
+        height: 60vh;
+    }
+}
