@@ -11,9 +11,9 @@
             <form class="modal__form">
                 <img id="cancel" src="cancel.png">
                 <label class="label1">&#128217; What do you want to do</label>
-                <input type="text" maxlength="11" placeholder="e.g excercise" id="todo__text">
+                <input type="text" maxlength="11" required placeholder="e.g excercise" id="todo__text">
                 <label class="label2">&#128338; What time do you want to do it</label>
-                <input id="todo__time" value="13:00" type="time" name="time">
+                <input id="todo__time" required value="13:00" type="time" name="time">
                 <input id="button" type="submit" value="Add">
             </form>
         </div>
@@ -21,10 +21,14 @@
 <div class="todo__head"><p id="date"></p> <p id="month"></p> <p id="year"></p> <p id="day"></p></div>
 <div class="todo__container"> 
     <ul class="todo__list">
-        <li class="todo__li"><div class="float"><p class="star">&#9733;</p><p class="star">&#9733;</p> <p class="star">&#9733;</p><div id="checkbox"><span id="check">&#10003;</span></div></li>
+        <li class="dubious"><p id="ex">Example</p><span id="means">13:00</span></li>
+        <li class="todo__li"><div class="float"><p class="star">&#9733;</p><p class="star">&#9733;</p><p class="star">&#9733;</p><div class="checkbox"><span class="check">&#10003;</span></div></li>
     </ul>
 </div>
 <div class="add__todo">+</div>
+<form>
+<input id="clear" type="submit" value="CLEAR ALL">
+</form>
         </div>
 <script src="./todo.js" type="text/javascript"></script>
     </body>

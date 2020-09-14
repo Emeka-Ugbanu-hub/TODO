@@ -49,6 +49,17 @@ body{
     height: 55vh;
     overflow-y: scroll;
 }
+.todo__container::-webkit-scrollbar {
+    width: 1em;
+  }
+  .todo__container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .todo__container::-webkit-scrollbar-thumb {
+    background-color: #25a4ff;
+    border-radius: 1em;
+    height: 10px;
+  }
 .todo__list{
     list-style-type: none;
 }
@@ -60,6 +71,7 @@ body{
     box-shadow:  5px 10px 18px #888888;
     margin-top: 1em;
 }
+
 .add__todo{
     color:#4092c1;
     text-align: center;
@@ -163,7 +175,13 @@ body{
 .star:hover{
     cursor: pointer;
 }
-#checkbox{
+.star__two{
+    font-size:1.4em;
+    position: relative;
+    top: -1.2em;
+    left:0.5em;
+}
+.checkbox{
     width: 60px;
     height: 60px;
     border-radius: 50px;
@@ -175,21 +193,77 @@ body{
     left: 1em;
     font-size: 1.5em;
 }
-#checkbox:hover{
+.checkbox__two{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: #8fc0e4;
+    text-align: center;
+    color: #ffff;
+    position: relative;
+    top: -7em;
+    left: 1.4em;
+    font-size: 1.5em;
+}
+.color{
+    color: red;
+}
+.background{
+    background:#25a4ff;
+}
+.checkbox,.checkbox__two,.star__two:hover{
     cursor: pointer;
 }
-#check{
+.check{
     position: absolute;
     top: 0.9em;
     right: 1.2em;
 }
 .time{
-    margin: -2em -1em 0 0;
+    margin: -6.5em 1.5em 0 0;
     float: right;
-    font-size: 1.2em;
+    font-size: 1.05em;
+    font-weight: 900;
 }
 #head{
     margin: 1em;
+}
+#clear{
+    position: relative;
+    top: 39em;
+    left: 19em;
+    background:#25a4ff;
+    width: 90px;
+    border-radius: 1em;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 900;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+#clear:hover{
+    cursor: pointer;
+}
+.dubious{
+    display: flex;
+}
+#ex{
+    position: absolute;
+    top: 2em;
+    left: 3em;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+#means{
+    position: absolute;
+    top: 3em;
+    left: 13em;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 1.08em;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px){
     .to__do{
