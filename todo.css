@@ -265,6 +265,12 @@ body{
     font-weight: 900;
     font-size: 1.08em;
 }
+#speech{
+    float:right;
+    margin:3em 2em 0em 0em;
+    height: 40px;
+    width: 50px;
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px){
     .to__do{
         background: #ffff;

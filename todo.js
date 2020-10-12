@@ -15,6 +15,8 @@ const fin = document.querySelector("#button");
 var input1 = document.querySelector("#todo__text");
 var input2 = document.querySelector("#todo__time");
 const star = document.querySelectorAll(".star");
+//for speech
+const speech = document.querySelector("#speech");
 //class for active
 const star2 = document.querySelector(".star__two");
 for(var i = 0; i < star.length; i++);
@@ -98,8 +100,33 @@ clear.addEventListener("click",()=>{
     localStorage.clear();
 })
 
+speech.addEventListener("click",()=>{
+ 
+    if ("speechSynthesis" in window) {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+var recognition = new SpeechRecognition();
+        // new speech recognition object
+        // This will run when the speech recognition service returns a result
+        
+        
+        recognition.onresult = function(event) {
+          var transcript = event.results[0][0].transcript;
+         input1.value = transcript;
+        };
+        
+        recognition.onspeechend = function() {
+           alert('You were quiet for a while so voice recognition turned itself off.');
+          }
+        // start recognition
+        recognition.start();
+        //   .....
+      } else {
+      alert("Speech recognition not supported 😢");
+        // code to handle error
+      }
 
-
+      
+})
 
 
        //reload create again
